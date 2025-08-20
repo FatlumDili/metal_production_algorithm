@@ -1,0 +1,501 @@
+CheckID,Product,Defects,Inspector,Date
+1,Axle,2,B,2024-01-31
+2,Brake Disc,3,A,2024-06-06
+3,Gearbox,2,D,2024-04-21
+4,Turbine Blade,2,B,2024-09-03
+5,Axle,0,D,2024-05-01
+6,Engine Block,4,D,2024-09-29
+7,Brake Disc,2,D,2024-10-20
+8,Gearbox,0,A,2024-07-25
+9,Gearbox,3,A,2024-04-19
+10,Engine Block,2,C,2024-10-04
+11,Engine Block,4,C,2024-02-25
+12,Turbine Blade,2,D,2024-02-26
+13,Gearbox,3,C,2024-10-17
+14,Engine Block,2,D,2024-04-23
+15,Turbine Blade,4,A,2024-11-03
+16,Turbine Blade,0,A,2024-12-06
+17,Engine Block,4,A,2024-07-16
+18,Axle,0,B,2024-11-16
+19,Axle,1,D,2024-06-27
+20,Engine Block,4,A,2024-08-06
+21,Brake Disc,4,D,2024-10-03
+22,Turbine Blade,3,C,2024-01-16
+23,Axle,2,C,2024-03-01
+24,Turbine Blade,0,A,2024-02-23
+25,Gearbox,0,D,2024-06-16
+26,Turbine Blade,3,A,2024-01-26
+27,Gearbox,3,C,2024-12-01
+28,Brake Disc,2,A,2024-03-05
+29,Engine Block,2,D,2024-04-09
+30,Gearbox,4,C,2024-03-14
+31,Brake Disc,1,B,2024-07-10
+32,Engine Block,2,C,2024-06-19
+33,Turbine Blade,3,B,2024-09-29
+34,Gearbox,2,A,2024-07-05
+35,Axle,0,A,2024-01-23
+36,Brake Disc,1,D,2024-06-29
+37,Gearbox,4,B,2024-11-22
+38,Brake Disc,0,A,2024-04-17
+39,Axle,0,B,2024-11-30
+40,Gearbox,1,A,2024-06-10
+41,Axle,4,C,2024-10-28
+42,Turbine Blade,3,A,2024-07-24
+43,Turbine Blade,4,D,2024-03-18
+44,Gearbox,2,C,2024-01-16
+45,Brake Disc,0,D,2024-11-22
+46,Axle,2,C,2024-04-05
+47,Axle,3,B,2024-05-26
+48,Gearbox,2,D,2024-01-02
+49,Axle,4,A,2024-01-10
+50,Brake Disc,2,B,2024-05-04
+51,Engine Block,3,A,2024-03-21
+52,Engine Block,3,C,2024-05-19
+53,Axle,3,C,2024-11-21
+54,Axle,4,A,2024-05-29
+55,Turbine Blade,3,A,2024-10-14
+56,Engine Block,0,B,2024-12-26
+57,Axle,3,A,2024-12-05
+58,Turbine Blade,2,D,2024-05-08
+59,Axle,2,D,2024-08-26
+60,Turbine Blade,2,A,2024-02-27
+61,Brake Disc,4,D,2024-07-16
+62,Axle,2,A,2024-07-29
+63,Brake Disc,4,B,2024-02-14
+64,Axle,4,D,2024-04-06
+65,Turbine Blade,3,D,2024-10-05
+66,Axle,0,A,2024-01-23
+67,Turbine Blade,3,D,2024-11-30
+68,Turbine Blade,3,C,2024-02-13
+69,Brake Disc,4,B,2024-01-27
+70,Turbine Blade,4,B,2024-10-08
+71,Gearbox,2,D,2024-04-06
+72,Gearbox,2,D,2024-02-05
+73,Turbine Blade,3,C,2024-04-18
+74,Brake Disc,1,C,2024-02-24
+75,Engine Block,1,D,2024-07-10
+76,Turbine Blade,2,D,2024-08-06
+77,Turbine Blade,1,C,2024-07-03
+78,Engine Block,2,A,2024-03-09
+79,Brake Disc,4,C,2024-11-12
+80,Turbine Blade,3,A,2024-05-09
+81,Axle,0,B,2024-02-24
+82,Axle,3,B,2024-04-06
+83,Turbine Blade,2,C,2024-12-01
+84,Engine Block,2,A,2024-03-27
+85,Brake Disc,3,C,2024-10-20
+86,Brake Disc,2,C,2024-04-28
+87,Gearbox,1,A,2024-07-26
+88,Axle,1,C,2024-11-29
+89,Axle,2,B,2024-06-02
+90,Brake Disc,2,D,2024-02-04
+91,Brake Disc,1,D,2024-03-19
+92,Gearbox,2,C,2024-03-07
+93,Turbine Blade,2,A,2024-12-08
+94,Gearbox,3,A,2024-02-03
+95,Engine Block,0,B,2024-04-06
+96,Engine Block,1,A,2024-06-17
+97,Axle,3,A,2024-06-17
+98,Turbine Blade,0,B,2024-05-30
+99,Engine Block,2,C,2024-03-11
+100,Turbine Blade,2,D,2024-01-03
+101,Gearbox,3,B,2024-11-09
+102,Gearbox,2,C,2024-02-01
+103,Engine Block,4,B,2024-10-13
+104,Engine Block,3,C,2024-03-22
+105,Axle,0,B,2024-02-12
+106,Engine Block,3,C,2024-04-14
+107,Brake Disc,1,B,2024-01-01
+108,Engine Block,3,C,2024-03-01
+109,Engine Block,2,B,2024-09-26
+110,Turbine Blade,2,D,2024-06-28
+111,Gearbox,4,D,2024-08-11
+112,Turbine Blade,4,A,2024-01-06
+113,Turbine Blade,4,C,2024-04-12
+114,Brake Disc,0,B,2024-01-10
+115,Turbine Blade,4,C,2024-03-11
+116,Gearbox,0,D,2024-03-30
+117,Gearbox,4,C,2024-08-13
+118,Brake Disc,0,B,2024-06-06
+119,Turbine Blade,3,C,2024-08-15
+120,Brake Disc,3,B,2024-05-05
+121,Gearbox,2,D,2024-07-27
+122,Axle,0,D,2024-04-06
+123,Turbine Blade,1,D,2024-03-14
+124,Turbine Blade,2,A,2024-04-24
+125,Axle,3,D,2024-07-09
+126,Engine Block,0,C,2024-06-18
+127,Brake Disc,4,A,2024-11-02
+128,Turbine Blade,1,D,2024-07-22
+129,Turbine Blade,3,C,2024-02-25
+130,Engine Block,2,C,2024-07-26
+131,Gearbox,0,C,2024-02-10
+132,Turbine Blade,1,B,2024-02-01
+133,Gearbox,0,A,2024-01-15
+134,Turbine Blade,4,C,2024-03-02
+135,Axle,2,B,2024-06-03
+136,Axle,0,D,2024-10-10
+137,Axle,3,C,2024-07-27
+138,Axle,2,B,2024-11-15
+139,Turbine Blade,3,C,2024-07-05
+140,Gearbox,0,A,2024-05-09
+141,Turbine Blade,2,A,2024-05-06
+142,Brake Disc,3,D,2024-10-18
+143,Engine Block,4,C,2024-04-23
+144,Axle,4,B,2024-07-17
+145,Brake Disc,0,D,2024-01-13
+146,Turbine Blade,2,C,2024-09-27
+147,Engine Block,1,D,2024-03-29
+148,Gearbox,2,B,2024-08-02
+149,Turbine Blade,4,D,2024-10-04
+150,Turbine Blade,3,D,2024-07-21
+151,Axle,1,D,2024-03-14
+152,Gearbox,0,C,2024-01-25
+153,Gearbox,1,B,2024-04-10
+154,Engine Block,0,A,2024-06-24
+155,Axle,1,C,2024-04-26
+156,Brake Disc,0,A,2024-06-14
+157,Gearbox,0,A,2024-02-10
+158,Turbine Blade,1,C,2024-12-09
+159,Turbine Blade,1,C,2024-04-29
+160,Gearbox,0,B,2024-04-06
+161,Turbine Blade,4,B,2024-05-24
+162,Engine Block,1,D,2024-08-03
+163,Engine Block,2,A,2024-08-16
+164,Turbine Blade,3,B,2024-11-08
+165,Turbine Blade,0,D,2024-05-09
+166,Gearbox,0,B,2024-12-17
+167,Turbine Blade,3,C,2024-11-13
+168,Gearbox,4,B,2024-05-16
+169,Turbine Blade,3,A,2024-11-19
+170,Turbine Blade,1,B,2024-12-02
+171,Axle,3,A,2024-09-29
+172,Turbine Blade,0,C,2024-04-26
+173,Axle,3,A,2024-11-01
+174,Engine Block,2,B,2024-04-03
+175,Brake Disc,1,D,2024-06-16
+176,Turbine Blade,3,C,2024-07-21
+177,Brake Disc,0,B,2024-12-06
+178,Turbine Blade,1,C,2024-05-28
+179,Brake Disc,0,C,2024-07-01
+180,Gearbox,4,B,2024-05-31
+181,Axle,2,B,2024-03-14
+182,Turbine Blade,4,D,2024-12-30
+183,Axle,2,C,2024-09-30
+184,Axle,3,C,2024-02-11
+185,Gearbox,1,B,2024-07-30
+186,Axle,3,A,2024-04-10
+187,Gearbox,2,B,2024-02-14
+188,Turbine Blade,2,C,2024-03-22
+189,Gearbox,2,B,2024-01-17
+190,Brake Disc,0,D,2024-03-13
+191,Engine Block,1,A,2024-01-14
+192,Brake Disc,3,B,2024-06-05
+193,Gearbox,3,D,2024-08-10
+194,Turbine Blade,4,C,2024-05-11
+195,Axle,2,B,2024-12-03
+196,Engine Block,2,C,2024-02-16
+197,Gearbox,2,D,2024-04-16
+198,Engine Block,3,C,2024-04-17
+199,Turbine Blade,4,D,2024-09-21
+200,Engine Block,0,D,2024-07-23
+201,Engine Block,1,D,2024-03-19
+202,Axle,0,B,2024-06-03
+203,Gearbox,3,C,2024-09-27
+204,Engine Block,2,C,2024-09-03
+205,Turbine Blade,1,A,2024-01-19
+206,Brake Disc,3,A,2024-12-11
+207,Brake Disc,3,A,2024-01-26
+208,Gearbox,3,A,2024-08-04
+209,Gearbox,1,C,2024-06-02
+210,Turbine Blade,1,D,2024-06-02
+211,Brake Disc,4,D,2024-06-22
+212,Gearbox,4,B,2024-04-01
+213,Engine Block,0,D,2024-12-03
+214,Gearbox,1,C,2024-06-29
+215,Gearbox,1,C,2024-05-10
+216,Gearbox,1,C,2024-10-24
+217,Axle,4,B,2024-10-01
+218,Axle,3,A,2024-09-29
+219,Engine Block,2,D,2024-03-16
+220,Engine Block,4,C,2024-06-25
+221,Axle,1,C,2024-07-02
+222,Gearbox,4,A,2024-11-14
+223,Gearbox,0,C,2024-05-10
+224,Brake Disc,1,D,2024-12-28
+225,Engine Block,0,B,2024-02-18
+226,Engine Block,1,C,2024-02-24
+227,Engine Block,4,D,2024-06-02
+228,Brake Disc,3,C,2024-12-20
+229,Axle,2,A,2024-07-18
+230,Brake Disc,0,C,2024-11-03
+231,Axle,4,C,2024-12-21
+232,Engine Block,3,B,2024-04-27
+233,Turbine Blade,4,A,2024-09-19
+234,Brake Disc,0,A,2024-02-15
+235,Gearbox,2,B,2024-10-28
+236,Gearbox,4,C,2024-12-21
+237,Gearbox,1,D,2024-07-07
+238,Engine Block,3,A,2024-11-05
+239,Axle,4,A,2024-11-13
+240,Engine Block,3,C,2024-05-08
+241,Engine Block,1,C,2024-02-18
+242,Gearbox,2,A,2024-01-25
+243,Gearbox,2,C,2024-09-22
+244,Turbine Blade,1,D,2024-04-27
+245,Turbine Blade,3,A,2024-05-23
+246,Turbine Blade,4,D,2024-07-18
+247,Brake Disc,1,D,2024-06-05
+248,Brake Disc,0,C,2024-12-13
+249,Engine Block,3,D,2024-05-13
+250,Turbine Blade,2,C,2024-05-27
+251,Gearbox,1,B,2024-12-01
+252,Brake Disc,2,C,2024-03-11
+253,Gearbox,3,D,2024-08-20
+254,Turbine Blade,2,B,2024-11-29
+255,Turbine Blade,1,C,2024-10-25
+256,Turbine Blade,3,D,2024-06-02
+257,Brake Disc,0,A,2024-03-30
+258,Engine Block,1,A,2024-11-29
+259,Axle,4,C,2024-07-17
+260,Axle,1,C,2024-06-09
+261,Turbine Blade,3,A,2024-01-26
+262,Gearbox,1,D,2024-04-30
+263,Brake Disc,0,D,2024-10-27
+264,Axle,0,D,2024-07-30
+265,Gearbox,4,C,2024-03-03
+266,Turbine Blade,2,B,2024-03-08
+267,Brake Disc,3,B,2024-09-09
+268,Turbine Blade,3,B,2024-01-02
+269,Brake Disc,2,B,2024-04-17
+270,Turbine Blade,0,B,2024-10-12
+271,Axle,0,C,2024-02-18
+272,Turbine Blade,1,C,2024-05-19
+273,Brake Disc,4,B,2024-08-05
+274,Axle,4,C,2024-02-13
+275,Engine Block,4,C,2024-09-25
+276,Axle,1,B,2024-03-18
+277,Brake Disc,4,D,2024-08-03
+278,Turbine Blade,2,C,2024-04-07
+279,Engine Block,1,D,2024-08-23
+280,Gearbox,2,C,2024-10-08
+281,Brake Disc,1,C,2024-05-28
+282,Axle,4,B,2024-10-30
+283,Brake Disc,2,C,2024-03-06
+284,Brake Disc,2,A,2024-08-21
+285,Gearbox,2,A,2024-03-27
+286,Engine Block,1,B,2024-03-19
+287,Engine Block,3,D,2024-07-23
+288,Brake Disc,4,D,2024-10-05
+289,Turbine Blade,2,D,2024-12-02
+290,Engine Block,3,A,2024-09-10
+291,Brake Disc,4,D,2024-10-30
+292,Engine Block,4,D,2024-05-09
+293,Engine Block,2,B,2024-03-24
+294,Turbine Blade,2,D,2024-10-02
+295,Brake Disc,1,A,2024-07-05
+296,Engine Block,3,A,2024-02-15
+297,Turbine Blade,3,A,2024-07-01
+298,Engine Block,2,B,2024-09-24
+299,Turbine Blade,4,B,2024-10-22
+300,Axle,2,C,2024-11-17
+301,Gearbox,4,D,2024-04-09
+302,Turbine Blade,4,B,2024-03-18
+303,Gearbox,2,A,2024-09-28
+304,Gearbox,0,A,2024-12-04
+305,Gearbox,3,B,2024-06-10
+306,Turbine Blade,4,B,2024-02-13
+307,Gearbox,4,B,2024-08-25
+308,Brake Disc,0,C,2024-05-13
+309,Gearbox,1,A,2024-07-10
+310,Turbine Blade,0,C,2024-12-21
+311,Gearbox,0,C,2024-10-04
+312,Axle,4,D,2024-01-18
+313,Gearbox,3,A,2024-01-12
+314,Axle,0,A,2024-06-28
+315,Engine Block,1,B,2024-05-02
+316,Turbine Blade,2,B,2024-09-02
+317,Turbine Blade,0,D,2024-08-09
+318,Gearbox,0,C,2024-02-20
+319,Engine Block,1,B,2024-03-11
+320,Turbine Blade,3,B,2024-02-17
+321,Axle,0,A,2024-01-19
+322,Brake Disc,0,A,2024-09-18
+323,Turbine Blade,3,B,2024-03-24
+324,Brake Disc,1,A,2024-06-03
+325,Axle,0,D,2024-02-22
+326,Brake Disc,3,B,2024-04-16
+327,Axle,0,A,2024-12-22
+328,Engine Block,2,D,2024-10-30
+329,Brake Disc,4,A,2024-05-14
+330,Engine Block,2,A,2024-03-09
+331,Axle,0,A,2024-01-11
+332,Gearbox,1,B,2024-05-22
+333,Engine Block,4,C,2024-07-10
+334,Brake Disc,2,A,2024-03-09
+335,Engine Block,3,D,2024-01-23
+336,Gearbox,1,B,2024-06-29
+337,Turbine Blade,2,B,2024-10-19
+338,Engine Block,3,D,2024-01-09
+339,Gearbox,0,A,2024-09-27
+340,Turbine Blade,3,C,2024-04-02
+341,Engine Block,2,A,2024-01-17
+342,Brake Disc,2,D,2024-06-02
+343,Gearbox,0,B,2024-11-23
+344,Brake Disc,3,C,2024-05-28
+345,Brake Disc,3,B,2024-09-23
+346,Turbine Blade,0,D,2024-11-23
+347,Engine Block,3,A,2024-04-15
+348,Engine Block,0,C,2024-02-04
+349,Axle,1,B,2024-04-28
+350,Brake Disc,2,B,2024-01-14
+351,Brake Disc,1,B,2024-01-14
+352,Axle,4,A,2024-09-22
+353,Brake Disc,4,C,2024-05-19
+354,Gearbox,4,A,2024-10-20
+355,Brake Disc,0,A,2024-12-29
+356,Brake Disc,3,A,2024-04-28
+357,Axle,1,D,2024-08-25
+358,Gearbox,1,D,2024-02-03
+359,Engine Block,1,D,2024-06-17
+360,Engine Block,1,C,2024-01-10
+361,Engine Block,4,A,2024-05-01
+362,Gearbox,1,A,2024-05-24
+363,Engine Block,3,D,2024-08-10
+364,Brake Disc,4,A,2024-09-13
+365,Turbine Blade,1,A,2024-09-24
+366,Axle,0,B,2024-12-24
+367,Gearbox,2,A,2024-01-04
+368,Brake Disc,2,B,2024-12-19
+369,Axle,2,A,2024-04-15
+370,Gearbox,4,C,2024-03-25
+371,Turbine Blade,1,D,2024-08-01
+372,Axle,4,B,2024-04-30
+373,Axle,3,D,2024-05-11
+374,Axle,0,B,2024-12-03
+375,Engine Block,0,B,2024-07-15
+376,Turbine Blade,2,B,2024-01-19
+377,Brake Disc,2,C,2024-05-09
+378,Axle,2,A,2024-01-12
+379,Turbine Blade,1,B,2024-03-21
+380,Engine Block,3,C,2024-11-25
+381,Gearbox,3,B,2024-12-19
+382,Axle,3,A,2024-09-18
+383,Gearbox,3,B,2024-05-04
+384,Engine Block,2,C,2024-11-02
+385,Turbine Blade,0,A,2024-09-23
+386,Gearbox,2,C,2024-05-19
+387,Axle,3,A,2024-11-24
+388,Axle,2,A,2024-01-02
+389,Brake Disc,3,D,2024-01-08
+390,Engine Block,4,D,2024-09-06
+391,Gearbox,0,D,2024-05-18
+392,Gearbox,4,A,2024-05-03
+393,Engine Block,1,B,2024-11-04
+394,Axle,2,C,2024-08-15
+395,Turbine Blade,1,C,2024-01-10
+396,Axle,2,C,2024-07-30
+397,Gearbox,4,D,2024-04-21
+398,Axle,3,A,2024-01-08
+399,Gearbox,3,D,2024-10-18
+400,Turbine Blade,2,B,2024-12-27
+401,Engine Block,3,A,2024-09-09
+402,Brake Disc,4,C,2024-01-14
+403,Gearbox,3,D,2024-08-27
+404,Engine Block,4,D,2024-08-29
+405,Gearbox,1,B,2024-12-07
+406,Axle,4,B,2024-05-28
+407,Brake Disc,0,D,2024-08-23
+408,Engine Block,0,B,2024-11-01
+409,Brake Disc,0,C,2024-06-15
+410,Engine Block,2,B,2024-01-20
+411,Gearbox,2,B,2024-08-03
+412,Brake Disc,2,D,2024-12-08
+413,Gearbox,4,D,2024-05-14
+414,Brake Disc,2,A,2024-05-08
+415,Engine Block,1,A,2024-10-20
+416,Turbine Blade,0,D,2024-09-02
+417,Brake Disc,4,B,2024-07-07
+418,Turbine Blade,0,B,2024-02-13
+419,Engine Block,2,A,2024-03-26
+420,Axle,4,A,2024-02-13
+421,Brake Disc,3,A,2024-11-25
+422,Brake Disc,1,C,2024-05-24
+423,Gearbox,2,C,2024-02-20
+424,Engine Block,2,A,2024-08-29
+425,Turbine Blade,1,B,2024-10-20
+426,Axle,1,A,2024-02-20
+427,Turbine Blade,3,C,2024-09-22
+428,Engine Block,2,B,2024-04-29
+429,Brake Disc,2,C,2024-07-18
+430,Engine Block,0,B,2024-09-04
+431,Axle,4,C,2024-03-10
+432,Axle,4,B,2024-12-06
+433,Axle,0,B,2024-02-26
+434,Gearbox,4,B,2024-02-08
+435,Gearbox,1,B,2024-10-15
+436,Turbine Blade,4,D,2024-01-18
+437,Gearbox,4,C,2024-08-07
+438,Gearbox,0,C,2024-11-08
+439,Gearbox,3,D,2024-08-31
+440,Gearbox,4,B,2024-12-17
+441,Brake Disc,4,B,2024-10-30
+442,Brake Disc,3,C,2024-10-24
+443,Engine Block,0,D,2024-10-09
+444,Gearbox,3,B,2024-03-14
+445,Brake Disc,0,B,2024-04-19
+446,Turbine Blade,1,B,2024-06-28
+447,Turbine Blade,0,A,2024-02-01
+448,Axle,1,D,2024-08-21
+449,Brake Disc,1,B,2024-10-08
+450,Turbine Blade,0,A,2024-01-25
+451,Axle,2,D,2024-11-26
+452,Brake Disc,0,B,2024-10-05
+453,Axle,4,C,2024-08-13
+454,Turbine Blade,4,A,2024-02-26
+455,Axle,2,A,2024-06-28
+456,Engine Block,1,B,2024-08-19
+457,Axle,2,B,2024-12-08
+458,Axle,4,A,2024-10-13
+459,Engine Block,2,C,2024-03-04
+460,Gearbox,0,C,2024-08-19
+461,Engine Block,2,D,2024-10-15
+462,Axle,1,B,2024-07-31
+463,Turbine Blade,0,C,2024-09-14
+464,Brake Disc,3,D,2024-01-18
+465,Brake Disc,4,C,2024-06-23
+466,Engine Block,4,B,2024-08-16
+467,Turbine Blade,2,D,2024-08-13
+468,Engine Block,0,D,2024-03-24
+469,Turbine Blade,3,D,2024-10-17
+470,Gearbox,0,C,2024-09-02
+471,Gearbox,4,B,2024-04-19
+472,Axle,0,D,2024-09-10
+473,Brake Disc,3,A,2024-03-28
+474,Turbine Blade,2,B,2024-03-12
+475,Gearbox,1,A,2024-01-30
+476,Axle,0,A,2024-06-20
+477,Gearbox,1,D,2024-11-04
+478,Gearbox,4,D,2024-12-08
+479,Gearbox,2,C,2024-06-25
+480,Gearbox,2,C,2024-05-18
+481,Engine Block,0,C,2024-07-12
+482,Turbine Blade,2,B,2024-07-04
+483,Axle,0,C,2024-08-05
+484,Engine Block,0,A,2024-06-12
+485,Turbine Blade,1,C,2024-06-09
+486,Turbine Blade,2,D,2024-01-13
+487,Axle,0,C,2024-10-22
+488,Turbine Blade,1,B,2024-03-29
+489,Turbine Blade,3,B,2024-11-19
+490,Axle,1,A,2024-02-11
+491,Turbine Blade,1,B,2024-07-28
+492,Turbine Blade,0,C,2024-08-16
+493,Axle,4,D,2024-12-15
+494,Turbine Blade,4,B,2024-10-01
+495,Turbine Blade,4,A,2024-10-05
+496,Turbine Blade,1,C,2024-09-07
+497,Turbine Blade,0,A,2024-11-05
+498,Engine Block,2,B,2024-07-26
+499,Brake Disc,1,B,2024-11-16
+500,Axle,1,A,2024-05-19
