@@ -1,0 +1,49 @@
+# Metal Production & Inventory Optimization
+
+This project implements a mock metal production scheduling system for mid-sized manufacturing compa$
+
+## Features
+
+- Mock order and machine datasets to simulate realistic production scenarios
+- ML-predicted late orders to prioritize scheduling
+- Sequential Linear Programming (LP) optimization to minimize lateness
+- Batch processing for efficiency and scalability
+- Optimized start/finish times per order with weighted prioritization
+
+## Dataset
+
+- `mock_data.csv` contains the mock order, machine, and material data used in the project
+- Column examples: OrderID, Product, Quantity, OrderDate, DeliveryTime_days, Priority, MachineID, P$
+- **Note:** All data is simulated for demonstration purposes, but based on most realistic processes
+
+## Usage
+
+1. Open metal_inventory.ipynb in Jupyter Notebook
+2. Run all cells sequentially from top to bottom
+3. The notebook includes:
+   - Data generation and checks
+   - Feature generation for ML prediction
+   - ML model training and predictions
+   - Sequential LP optimization for order scheduling
+   - Visualizations of optimized orders
+
+## Dependencies
+
+- Python 3.10+
+- pandas
+- numpy
+- scikit-learn
+- pulp
+- matplotlib
+- seaborn
+
+Install dependencies via:
+
+```bash
+pip install -r requirements.txt
+
+## Notes
+
+- Solver times grow with the increasing number of orders
+- All data is mock-generated due to the lack of specific datasets
+- The project is intended for education and prototyping purposes
