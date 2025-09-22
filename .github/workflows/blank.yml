@@ -1,59 +1,57 @@
-name: Ultimate Daily Automation with Debug
+name: Ultimate Repo Automation
 
 on:
-  workflow_dispatch:    # allows manual run
   schedule:
     - cron: "0 12 * * *"  # daily at 12:00 UTC
+  workflow_dispatch:      # allows manual run
 
 jobs:
-  daily-update:
+  super-update:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. Checkout the repository
+      # 1. Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: false   # we’ll use PAT manually
+          persist-credentials: false
 
-      # 2. Debug: Show working directory and files
-      - name: Debug Repo State
-        run: |
-          echo "Current directory:"
-          pwd
-          echo "Files:"
-          ls -la
-
-      # 3. Update README (example)
+      # 2. Update README with timestamp
       - name: Update README
         run: |
-          echo "Last updated: $(date)" >> README.md
+          echo "Last updated: $(date)" > last_update.txt
+          echo "" >> last_update.txt
+          cat README.md >> last_update.txt
+          mv last_update.txt README.md
 
-      # 4. Run Python script (metal production project)
-      - name: Run Metal Production Script
+      # 3. Add a daily random quote
+      - name: Add daily quote
         run: |
-          python3 metal_inventory.ipynb
+          QUOTE=$(curl -s https://api.quotable.io/random | jq -r '.content')
+          echo "$QUOTE" > daily-quote.txt
 
-      # 5. Add daily quote
-      - name: Add Daily Quote
+      # 4. Setup Python and install packages
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
         run: |
-          echo "Your ultimate daily quote for $(date)" > daily-quote.txt
+          pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install black
 
-      # 6. Debug: Show Git status before commit
-      - name: Git Status & Diff
-        run: |
-          git status
-          git diff
+      # 5. Auto-format Python code
+      - name: Format Python code
+        run: black . --line-length 88 || echo "No formatting changes"
 
-      # 7. Commit & push changes using PAT
-      - name: Commit & Push
+      # 6. Commit everything
+      - name: Commit & push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add README.md daily-quote.txt
-          git add metal_production.py  # if your script updates itself
-          git commit -m "Ultimate daily update $(date)" || echo "No changes to commit"
-          git log -1
+          git add daily-quote.txt
+          git commit -m "Ultimate daily update $(date)" || echo "No changes"
           git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
