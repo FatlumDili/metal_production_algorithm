@@ -1,3 +1,5 @@
+Last updated: Mon Sep 22 17:42:16 UTC 2025
+
 # Metal Production Optimization
 
 This project implements a mock metal production scheduling system for mid-sized manufacturing companies, specifically in the automotive and aviation sectors. It combines machine learning and linear programming to optimize order fulfillment.
