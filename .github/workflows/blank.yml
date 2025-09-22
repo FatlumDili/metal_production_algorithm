@@ -53,5 +53,5 @@ jobs:
          git add .
          git commit -m "Ultimate daily update $(date)" || echo "No changes"
          git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
-          env:
-            PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+         env:
+         PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
