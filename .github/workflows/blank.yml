@@ -32,7 +32,7 @@ jobs:
       # 4. Run Python script (metal production project)
       - name: Run Metal Production Script
         run: |
-          python3 metal_production.py
+          python3 metal_inventory.ipynb
 
       # 5. Add daily quote
       - name: Add Daily Quote
