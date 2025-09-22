@@ -45,13 +45,6 @@ jobs:
       - name: Format Python code
         run: black . --line-length 88 || echo "No formatting changes"
 
-      - run: echo "PAT length:${#PAT_TOKEN}"
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-      - run: pwd
-      - run: ls -la
-
       # 6. Commit everything
       - name: Commit & Push
         run: |
@@ -63,6 +56,6 @@ jobs:
           git add daily-quote.txt
          fi
          git commit -m "Ultimate daily update $(date)" || echo "No changes"
-         git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
+         git push https://x-access-token:${PAT_TOKEN}@github.com/FatlumDili/metal_production_algorithm.git main
           env:
            PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
