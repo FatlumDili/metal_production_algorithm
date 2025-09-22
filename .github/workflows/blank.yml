@@ -1,57 +1,33 @@
-name: Ultimate Repo Automation
+name: Ultimate Daily Update - Final Resort
 
 on:
+  workflow_dispatch:    # allows manual run
   schedule:
     - cron: "0 12 * * *"  # daily at 12:00 UTC
-  workflow_dispatch:      # allows manual run
 
 jobs:
-  super-update:
+  daily-update:
     runs-on: ubuntu-latest
+
     steps:
-      # 1. Checkout repo
+      # 1. Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-         persist-credentials: true  # allows git push using GITHUB_TOKEN
-     
-      # 2. Update README with timestamp
-      - name: Update README
-        run: |
-          echo "Last updated: $(date)" > last_update.txt
-          echo "" >> last_update.txt
-          cat README.md >> last_update.txt
-          mv last_update.txt README.md
+          persist-credentials: false   # we use PAT manually
 
-      # 3. Add a daily random quote
+      # 2. Create or update a daily quote file
       - name: Add daily quote
         run: |
-          QUOTE=$(curl -s https://api.quotable.io/random | jq -r '.content')
-          echo "$QUOTE" > daily-quote.txt
+          echo "Your ultimate daily quote for $(date)" > daily-quote.txt
 
-      # 4. Setup Python and install packages
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        run: |
-          pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pip install black
-
-      # 5. Auto-format Python code
-      - name: Format Python code
-        run: black . --line-length 88 || echo "No formatting changes"
-
-      # 6. Commit everything
+      # 3. Commit & push changes using PAT
       - name: Commit & push
         run: |
-         git config user.name "GitHub Actions"
-         git config user.email "actions@github.com"
-         git add .
-         git commit -m "Ultimate daily update $(date)" || echo "No changes"
-         git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
-         env:
-         PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add daily-quote.txt
+          git commit -m "Ultimate daily update $(date)" || echo "No changes"
+          git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
