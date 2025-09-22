@@ -44,9 +44,9 @@ jobs:
 
       # 6. Commit everything
       - name: Commit & push
-   run: |
-    git config user.name "GitHub Actions"
-    git config user.email "actions@github.com"
-    git add .
-    git commit -m "Ultimate daily update $(date)" || echo "No changes"
-    git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/FatlumDili/metal_production_algorithm.git main
+        run: |
+         git config user.name "GitHub Actions"
+         git config user.email "actions@github.com"
+         git add .
+         git commit -m "Ultimate daily update $(date)" || echo "No changes"
+         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/FatlumDili/metal_production_algorithm.git main
