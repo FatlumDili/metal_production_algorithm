@@ -45,6 +45,13 @@ jobs:
       - name: Format Python code
         run: black . --line-length 88 || echo "No formatting changes"
 
+      - run: echo "PAT length:${#PAT_TOKEN}"
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+      - run: pwd
+      - run: ls -la
+
       # 6. Commit everything
       - name: Commit & Push
         run: |
