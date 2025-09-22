@@ -45,17 +45,18 @@ jobs:
       - name: Format Python code
         run: black . --line-length 88 || echo "No formatting changes"
 
-      # 6. Commit everything
-      - name: Commit & Push
+      - name: Setup SSH
         run: |
-         git config user.name "GitHub Actions"       
-         git config user.email "actions@github.com"  
+         mkdir -p ~/.ssh
+         echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+         chmod 600 ~/.ssh/id_ed25519
+         ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      # 6. Commit everything
+      - name: Commit & push
+        run: |
+         git config user.name "GitHub Actions"
+         git config user.email "actions@github.com"
          git add daily-quote.txt metal_inventory.ipynb README.md
-         if git diff --cached --quiet; then
-          echo "Daily timestamp $(date)" >> daily-quote.txt
-          git add daily-quote.txt
-         fi
          git commit -m "Ultimate daily update $(date)" || echo "No changes"
-         git push https://x-access-token:${PAT_TOKEN}@github.com/FatlumDili/metal_production_algorithm.git main
-          env:
-           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+         git push git@github.com:FatlumDili/metal_production_algorithm.git main
