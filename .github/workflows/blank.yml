@@ -1,4 +1,4 @@
-name: Ultimate Daily Update - Final Resort
+name: Ultimate Daily Automation with Debug
 
 on:
   workflow_dispatch:    # allows manual run
@@ -14,20 +14,46 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: false   # we use PAT manually
+          persist-credentials: false   # we’ll use PAT manually
 
-      # 2. Create or update a daily quote file
-      - name: Add daily quote
+      # 2. Debug: Show working directory and files
+      - name: Debug Repo State
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Files:"
+          ls -la
+
+      # 3. Update README (example)
+      - name: Update README
+        run: |
+          echo "Last updated: $(date)" >> README.md
+
+      # 4. Run Python script (metal production project)
+      - name: Run Metal Production Script
+        run: |
+          python3 metal_production.py
+
+      # 5. Add daily quote
+      - name: Add Daily Quote
         run: |
           echo "Your ultimate daily quote for $(date)" > daily-quote.txt
 
-      # 3. Commit & push changes using PAT
-      - name: Commit & push
+      # 6. Debug: Show Git status before commit
+      - name: Git Status & Diff
+        run: |
+          git status
+          git diff
+
+      # 7. Commit & push changes using PAT
+      - name: Commit & Push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add daily-quote.txt
-          git commit -m "Ultimate daily update $(date)" || echo "No changes"
+          git add README.md daily-quote.txt
+          git add metal_production.py  # if your script updates itself
+          git commit -m "Ultimate daily update $(date)" || echo "No changes to commit"
+          git log -1
           git push https://$PAT_TOKEN@github.com/FatlumDili/metal_production_algorithm.git main
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
